@@ -1,2 +1,2 @@
 /venv
-mysite/*.sqlite3
+mysite/db.sqlite3
