@@ -1,7 +1,8 @@
 import os
 from django.contrib import admin
 from django.urls import include, path
-from django.conf.urls import url
+# from django.conf.urls import url
+from django.urls import re_path as url # <-- Django 4 version of dango.conf.urls
 from django.views.static import serve
 
 # Up two folders to serve "site" content
