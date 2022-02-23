@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
+from django.views import generic
 
 from .models import Choice, Question
 
@@ -8,9 +9,6 @@ def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
     return render(request, 'polls/index.html', context)
-
-def hello(request):
-    return HttpResponse("Hello, world!")
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
