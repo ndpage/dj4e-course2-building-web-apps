@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',   # custom polls application
-    'home.apps.HomeConfig'      # home app/landing page
 ]
 
 MIDDLEWARE = [

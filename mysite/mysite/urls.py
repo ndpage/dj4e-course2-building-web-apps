@@ -17,6 +17,6 @@ urlpatterns = [
         {'document_root': SITE_ROOT, 'show_indexes': True},
         name='site_path'
     ),
-    path('', TemplateView.as_view(template_name='home/main.html')),
+
 
 ]
