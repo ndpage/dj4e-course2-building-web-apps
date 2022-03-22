@@ -10,6 +10,6 @@ def hello(request):
   oldval = request.COOKIES.get('dj4e_cookie', None)
   print(f"Previous session cookie: {oldval}")
   
-  resp = HttpResponse('You set the cookie!')
+  resp = HttpResponse(f'You set the cookie {cookie_key}:{cookie_value}')
   resp.set_cookie(cookie_key, cookie_value, max_age=1000)
   return resp
