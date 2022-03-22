@@ -6,6 +6,7 @@ from django.urls import re_path as url  # <-- Django 4 version of dango.conf.url
 from django.views.static import serve
 from django.views.generic.base import TemplateView
 
+
 # Up two folders to serve "site" content
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_ROOT = os.path.join(BASE_DIR, 'site')
@@ -13,6 +14,7 @@ SITE_ROOT = os.path.join(BASE_DIR, 'site')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),                                                                                           
+    path('hello/', include('hello.urls')),                                                                                           
     url(r'^site/(?P<path>.*)$', serve,
         {'document_root': SITE_ROOT, 'show_indexes': True},
         name='site_path'),
