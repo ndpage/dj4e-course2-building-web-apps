@@ -1,7 +1,5 @@
 
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render
-
+from django.http import HttpResponse
 
 # Create your views here.
 def hello(request):
