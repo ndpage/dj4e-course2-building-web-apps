@@ -1,0 +1,23 @@
+* {
+  display: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: left;
+}
+
+a {
+  font-size: large;
+}
+
+p {
+  margin: 1em auto
+}
+
+section {
+  max-width: 80%;
+}
